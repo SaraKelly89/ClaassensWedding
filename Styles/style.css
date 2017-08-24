@@ -1,21 +1,61 @@
 *{
   box-sizing:border-box;
-  /*border:1px solid #D2527F;*/
+  border:1px solid #D2527F;
   margin:0;
   padding:0;
 }
-img{max-width: 100%}
+img{
+  max-width: 100%;
+  display:block;
+}
 
 /*universial styles*/
+section {
+  padding: 5%;
+}
+
+
+h1{}
+
+h2{margin:1%;}
+
 
 /*-------------hearder section styles----------*/
+#home {background-color: white;}
+.navLink a{
+  color: grey;
+  font-size: 19px;
+text-decoration: none;
+background-color: white;
+padding:2%;
+transition:4s}
+
+.navLink a:hover{font-size:21px;
+transition: 1s;}
 
 /*-----Section 1 background image-----*/
-
+.banner{height:100vh;
+background-size: cover;}
 /*-----Section 2 About Us-----*/
+#OurStory {background-color: grey;}
+
+.polaroid div{ background-color: white;
+margin:10%;}
+.polaroid {
+  border:solid 1px black;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 10%;
+  margin:10%;
+  background-color: white;
+}
+.heart {background-color: grey;}
 
 /*------Section 2.1 Our Story-----*/
-
+.tile {
+  padding:3%;
+}
 /*-----Section 3 The Wedding Date-----*/
 
 /*-----Section 4 Three Tile Buttons-----*/
@@ -27,3 +67,4 @@ img{max-width: 100%}
 /*-----Section 7 Happily Ever After Party----*/
 
 /*-----Section 8 Footer RSVP form-----*/
+form {padding:1%;}
