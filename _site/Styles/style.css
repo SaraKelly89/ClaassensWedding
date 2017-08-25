@@ -35,7 +35,9 @@ transition: 1s;}
 
 /*-----Section 1 background image-----*/
 .banner{height:100vh;
-background-size: cover;}
+background-size: cover;
+margin-left: 5%;
+margin-right: 5%;}
 /*-----Section 2 About Us-----*/
 #OurStory {background-color: grey;}
 
