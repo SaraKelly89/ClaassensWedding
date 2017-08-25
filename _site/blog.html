@@ -4,54 +4,66 @@
 <head>
   <meta charset="utf-8">
   <title>Claassens Wedding</title>
-
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab|Vollkorn" rel="stylesheet">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab|Noticia+Text" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.4.0/gridlex.min.css">
-
   <link rel="stylesheet" href="Styles/style.css">
+  <script src="https://use.fontawesome.com/d185550c4b.js"></script>
 </head>
 
 <body>
 
   <!--Header Navigation-->
   <header id="home">
-    <nav class="grid-spaceBetween">
-      <div class="NavLeft grid col-5">
 
+    <div class="mob-hide">
+    <nav class="grid-spaceBetween mob-hide">
+      <div class="NavLeft grid col-5">
         <div class="navLink col-4">
           <a href="#OurStory"> Our Story </a>
         </div>
-
         <div class="navLink col-4">
           <a href="#TheWedding"> The Wedding </a>
         </div>
-
         <div class="navLink col-4">
           <a href="#Blog"> Honey-Moon Journal </a>
         </div>
-
       </div>
-
       <div class="col-2">
         <h1> Claassens Wedding </h1>
       </div>
-
       <div class="NavRight grid col-5">
         <div class="navLink col-4">
           <a href="#AfterParty"> Happily Ever After Party </a>
         </div>
-
         <div class="navLink col-4">
           <a href="#Gallery"> Gallery </a>
         </div>
-
         <div class="navLink col-4">
           <a href="#RSVP"> RSVP </a>
         </div>
-
       </div>
     </nav>
+  </div>
+
+      <!-- Hamburger Menu -->
+      <div class="burger-button mob-show">
+          <span class="burger-top"></span>
+          <span class="burger-middle"></span>
+          <span class="burger-bottom"></span>
+       <div class="burger-menu">
+        <nav>
+          <ul>
+            <li><a href="#OurStory">Our Story</a></li>
+            <li><a href="#TheWedding">The Wedding</a></li>
+            <li><a href="#blog">Honey Moon Journal</a></li>
+            <li><a href="#AfterParty">Happily Ever After Party</a></li>
+            <li><a href="#Gallery">Gallery</a></li>
+            <li><a href="#RSVP">RSVP</a></li>
+          <ul>
+        </nav>
+      </div>
+  </div>
 
 
 
@@ -59,6 +71,16 @@
 <h1> Recent Posts </h1>
 
 <div class="grid">
+
+
+
+<div class="postPreview">
+  <img src="http://lorempixel.com/400/200" />
+  <h3> My First Blog Post </h3>
+  <p>  </p>
+  <p> 2017-08-25 00:00:00 +1000 </p>
+  <p> Sara Kelly </p>
+</div>
 
 
 
@@ -115,6 +137,11 @@
       </form>
 
     </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="js/script.js" type="type/javascript">
+    </script>
 
   </body>
 
