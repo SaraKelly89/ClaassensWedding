@@ -1,8 +1,8 @@
 ---
 layout: default
-title: My Second Blog Post
+title: My Third Blog Post
 description: This is a short description
-featured-image: http://lorempixel.com/400/200
+featured-image: Images/croped/tableDecorationCrop.jpg
 author: Sara Kelly
 ---
 

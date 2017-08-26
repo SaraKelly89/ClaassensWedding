@@ -2,7 +2,7 @@
 layout: default
 title: My First Blog Post
 description: This is a short description
-featured-image: Images\familyPhoto.jpg
+featured-image: Images/croped/mollySaraCrop.jpg
 author: Sara Kelly
 ---
 

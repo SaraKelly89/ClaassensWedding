@@ -2,7 +2,7 @@
 layout: default
 title: My Second Blog Post
 description: This is a short description
-featured-image: http://lorempixel.com/400/200
+featured-image: Images/croped/serisierWeddingCrop.jpg
 author: Sara Kelly
 ---
 
