@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  border: 1px solid pink;
+  /*border: 1px solid pink;*/
   margin: 0;
   padding: 0;
 }
@@ -10,14 +10,23 @@ img {
   display: block;
 }
 
+h1, h2, h3, h4, h5, h6, p, a {
+  border: 1px solid rgb(220,220,220);
+}
 
 /*universial styles*/
-body {padding-left: 2%;
-padding-right: 2%;
+body {
 background-color: #F0F0F0}
 
 section {
-  /*padding: 5%;*/
+  padding:2%;
+}
+.padded-2 {
+  padding: 2%;
+}
+
+.padded-5 {
+  padding: 5%;
 }
 
 h1 {
@@ -40,7 +49,9 @@ p {font-family: 'Noticia Text', serif;
 
 
 /*-------------hearder section styles----------*/
-.navLink {padding: 0;}
+.navLink {padding: 0;
+    text-align: center;
+}
 
 .navLink a {
   color: black;
@@ -48,10 +59,13 @@ p {font-family: 'Noticia Text', serif;
   text-decoration: none;
   transition: 2s;
   text-align: center;
+  padding: 0.5rem;
+  display:inline-block;
 }
 
 .navLink a:hover {
-  font-size: 22px;
+  color: pink;
+  border-bottom: 1px solid pink;
   transition: 0.5s;
 }
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: My First Blog Post
-Description: This is a short description
+description: This is a short description
 featured-image: http://lorempixel.com/400/200
 author: Sara Kelly
 ---
