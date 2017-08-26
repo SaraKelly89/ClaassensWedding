@@ -4,14 +4,16 @@
   margin: 0;
   padding: 0;
 }
-
+svg{
+  width:50%;
+}
 img {
   max-width: 100%;
   display: block;
 }
 
 h1, h2, h3, h4, h5, h6, p, a {
-  border: 1px solid rgb(220,220,220);
+  /*border: 1px solid rgb(220,220,220);*/
 }
 
 /*universial styles*/
@@ -27,6 +29,11 @@ section {
 
 .padded-5 {
   padding: 5%;
+}
+
+.paddedTB{
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 h1 {
@@ -47,13 +54,22 @@ p {font-family: 'Noticia Text', serif;
   font-size: 15px;
   font-weight: lighter;}
 
-
-/*-------------hearder section styles----------*/
-.navLink {padding: 0;
-    text-align: center;
+.seePhotos {
+  text-decoration: none;
+  color:black;
+  margin: 2%;
 }
 
-.navLink a {
+.seePhotos:hover {
+  color: #888888;
+}
+
+
+
+
+/*-------------hearder section styles----------*/
+
+header a {
   color: black;
   font-size: 20px;
   text-decoration: none;
@@ -63,17 +79,24 @@ p {font-family: 'Noticia Text', serif;
   display:inline-block;
 }
 
-.navLink a:hover {
-  color: pink;
-  border-bottom: 1px solid pink;
+header a:hover {
+  color: #888888;
   transition: 0.5s;
+}
+
+.NavLeft {
+  text-align: right;
+}
+
+.NavRight {
+  text-align: left;
 }
 
 
 /*-----Section 1 background image-----*/
 
 .banner {
-  height: 100vh;
+  height: 75vh;
   background-size: cover;
   margin-left: 5%;
   margin-right: 5%;
@@ -103,17 +126,25 @@ p {font-family: 'Noticia Text', serif;
   background-color: white;
 }
 
+#OurStory h3{
+  font-size: 30px;
+margin-top: 5%;
+}
+
 .heart {text-align: center;}
 
 .heart i{font-size: 90px;}
 
 
 /*------Section 2.1 Our Story-----*/
-
-.tile {
-  padding: 3%;
-  text-decoration: none;
+.aboutStyle {
+  background-color: #E6E6FA;
 }
+
+.aboutStyle p{background-color: white;}
+
+
+
 
 
 /*-----Section 3 The Wedding Date-----*/
@@ -123,10 +154,20 @@ background-color: #E6E6FA}
   font-size: 50px;}
 
 /*-----Section 4 Three Tile Buttons-----*/
-.tile a{text-decoration: none;
-color:black;}
+.tile {
+  text-decoration: none;
+  background-color: white;
+}
 
-.tile a:hover{color: #686868;}
+.tile a{text-decoration: none;
+color:black;
+}
+
+.tile a:hover{color: #888888;}
+
+/*.tile h2, p {background-color: white;}*/
+
+
 
 /*-----Section 5 Love Quote-----*/
 
@@ -145,10 +186,16 @@ background-color: #E6E6FA;
 
 
 /*-----Section 6 The Wedding-----*/
-
+#TheWedding p{
+  background-color: white;
+}
 
 /*-----Section 7 Happily Ever After Party----*/
+#AfterParty p{
+  background-color: white;}
 
+  #AfterParty span{
+    font-weight: bold;}
 
 /*-----Section 8 Footer RSVP form-----*/
 
@@ -182,7 +229,9 @@ form {
   text-align:center;
   white-space:nowrap;
 }
-.burger-menu li{list-style:none}
+.burger-menu li{
+  list-style:none;
+}
 /* this is where you style the button if you want to add more space between the spans than add padding to this div but make sure you also add it to the top and bottom active classes on there top/bottom or else your cross wont line up*/
 .burger-button {
   position:fixed;
@@ -192,6 +241,9 @@ form {
   padding: 8px;
 }
 /*this is where you can chand the color of the buttons*/
+.mob-show{
+  display:none;
+}
 .burger-button span{
   width: 25px;
   border: 2px solid black;
@@ -220,7 +272,8 @@ form {
 
 .active .burger-bottom{
   transform: rotateZ(-45deg);
-  bottom:8px;}
+  bottom:8px;
+}
 
 /* now press your button and see whats wrong? go back and add a top to the .burger-top on active to push it down and a bottom to the .burger-bottom to push it up */
 
@@ -231,10 +284,6 @@ form {
 }
 
 /*Media Quires*/
-.mob-show{
-  display:none;
-}
-
 @media all and (max-width: 800px){
   .mob-show{
     display:block;
