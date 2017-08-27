@@ -1,0 +1,388 @@
+* {
+  box-sizing: border-box;
+  /*border: 1px solid pink;*/
+  margin: 0;
+  padding: 0;
+}
+svg{
+  width:50%;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  /*border: 1px solid rgb(220,220,220);*/
+}
+
+/*universial styles*/
+body {
+background-color: #FAFAFA;
+overflow-x: hidden;
+}
+
+
+section {
+  padding: 2%;
+}
+.padded-2 {
+  padding: 2%;
+}
+
+.padded-5 {
+  padding: 5%;
+}
+
+.paddedTB{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.bgColored {
+  background-color: #EFEEEE;
+}
+
+h1 {
+font-family: 'Amatic SC', cursive;
+font-size: 40px;
+text-align: center;
+}
+
+h2 {font-family: 'Josefin Slab', sans-serif;
+  font-size: 25px;
+  margin: 1%;
+}
+
+h3 {font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+    padding: 1%;}
+
+p {font-family: 'Noticia Text', serif;
+  font-size: 15px;
+  font-weight: lighter;}
+
+.seePhotos {
+  text-decoration: none;
+  color:black;
+  margin: 2%;
+}
+
+.seePhotos:hover {
+  color: #888888;
+}
+
+
+
+
+/*-------------hearder section styles----------*/
+
+header a {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  transition: 2s;
+  text-align: center;
+  padding: 0.5rem;
+  display:inline-block;
+}
+
+header a:hover {
+  color: #888888;
+  transition: 0.5s;
+}
+
+.NavLeft {
+  text-align: right;
+}
+
+.NavRight {
+  text-align: left;
+}
+svg{
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+}
+
+.bottomTriangle {
+  bottom:0;
+}
+
+.bgTriangle {
+  fill: #EFEEEE;
+  opacity:1;
+}
+polygon{
+  opacity: .5;
+}
+
+/*-----Section 1 background image-----*/
+
+.banner {
+  height: 75vh;
+  background-size: cover;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 5%;
+  position: relative;
+}
+
+
+/*-----Section 2 About Us-----*/
+#OurStory h2 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.polaroid div {
+  background-color: white;
+}
+
+.polaroid {
+  border: solid 1px black;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 10%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 0;
+  background-color: white;
+}
+
+#OurStory h3{
+  font-size: 30px;
+  margin-top: 5%;
+}
+
+.heart {text-align: center;}
+
+.heart i{font-size: 110px;}
+
+.story {text-align: center;}
+.story p{background-color: white;
+margin: 3%;}
+
+/*------Section 2.1 Our Story-----*/
+.aboutStyle p{background-color: white;}
+}
+
+/*-----Section 3 The Wedding Date-----*/
+.weddingDate {padding: 0;}
+.weddingDate h1{
+  font-size: 50px;}
+
+/*-----Section 4 Three Tile Buttons-----*/
+.tileGrey {
+  background-color: #BDC3C7;
+}
+.tile {
+  text-decoration: none;
+  background-color: white;
+  border: 3px solid black;
+}
+
+.tile a{text-decoration: none;
+color:black;
+}
+
+.tile a:hover{color: #888888;}
+
+/*.tile h2, p {background-color: white;}*/
+
+
+
+/*-----Section 5 Love Quote-----*/
+
+.loveQuote {padding: 2%;
+  font-size: 50px;}
+
+  .loveQuote h2{
+    font-family: Amatic+SC;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .loveQuote i{padding:2%}
+
+
+
+/*-----Section 6 The Wedding-----*/
+#TheWedding p{
+  background-color: white;
+}
+
+/*-----Blog Posts-----*/
+.blogPosts {
+  margin:3%;}
+
+.noDecoration {
+  text-decoration: none;
+  color: black;
+}
+
+
+.noDecoration:hover{
+  color: #888888;
+}
+
+/*-----Section 7 Happily Ever After Party----*/
+#AfterParty p{
+  background-color: white;}
+
+  #AfterParty span{
+    font-weight: bold;
+  font-size: 15px}
+
+  .largeText {
+    font-size: 19px;}
+/*Timeline Styles */
+.timeline-bottom, .timeline-top{
+  text-align:center;
+  position:relative;
+}
+.timeline-top{
+  border-bottom:2px solid black;
+  margin-top: 2%;
+  margin-bottom:-2px;
+}
+.timeline-top i{
+  position:absolute;
+  bottom:-10px;
+  color: black;
+}
+.timeline-top p{
+  border:1px solid #EFEEEE;
+  margin-bottom:-15px;
+  padding-bottom:3%;
+}
+.timeline-bottom{
+  border-top:2px solid black;
+  margin-top:-2px;
+}
+.timeline-bottom i{
+  position:absolute;
+  top:-10px;
+  color: black;
+}
+.timeline-bottom p{
+  border:1px solid #EFEEEE;
+  margin-top:1px;
+  padding-top:3%;
+}
+
+/*-----Section 8 Footer RSVP form-----*/
+
+form {
+  padding: 1%;
+}
+
+a.top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 45;
+  border: none;
+  outline: none;
+  background-color: #888888;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+a.top-button:hover{
+  background-color: #555;
+}
+
+
+/*-----Burger Menu-----*/
+.burger-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: #f9f9f9;
+    padding:5px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    z-index: 99999999;
+}
+.burger-menu a {
+  text-decoration: none;
+  padding: 15px 11px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #C3BFBC;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  display:block;
+  padding:5px 15px;
+  text-align:center;
+  white-space:nowrap;
+}
+.burger-menu li{
+  list-style:none;
+}
+/* this is where you style the button if you want to add more space between the spans than add padding to this div but make sure you also add it to the top and bottom active classes on there top/bottom or else your cross wont line up*/
+.burger-button {
+  position:fixed;
+  top: 2vh;
+  right: 2vh;
+  z-index: 9999999999;
+  padding: 8px;
+}
+/*this is where you can chand the color of the buttons*/
+.mob-show{
+  display:none;
+}
+.burger-button span{
+  width: 25px;
+  border: 2px solid black;
+  background-color: black;
+  display: block;
+  border-radius: 22px;
+  transition: 2s;
+}
+.burger-top, .burger-bottom{
+  position: absolute;
+}
+.burger-top{
+  top: 02px;
+}
+.burger-bottom{
+  bottom: 02.5px;
+}
+
+/* target the burger top when the button has the active class and give it a transform: rotateZ(45deg);*/
+.active .burger-top{
+  transform: rotateZ(45deg);
+  top:8px;
+}
+
+/* now do the same for the bottom but with a negitive rotate */
+
+.active .burger-bottom{
+  transform: rotateZ(-45deg);
+  bottom:8px;
+}
+
+/* now press your button and see whats wrong? go back and add a top to the .burger-top on active to push it down and a bottom to the .burger-bottom to push it up */
+
+/* now try and make the middle line disapeare */
+
+.active .burger-middle{
+  opacity:0;
+}
+
+/*Media Quires*/
+@media all and (max-width: 800px){
+  .mob-show{
+    display:block;
+  }
+  .mob-hide{
+    display:none;
+  }
+}
