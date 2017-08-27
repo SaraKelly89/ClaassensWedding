@@ -99,7 +99,24 @@ header a:hover {
 .NavRight {
   text-align: left;
 }
+svg{
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+}
 
+.bottomTriangle {
+  bottom:0;
+}
+
+.bgTriangle {
+  fill: #EFEEEE;
+  opacity:1;
+}
+polygon{
+  opacity: .5;
+}
 
 /*-----Section 1 background image-----*/
 
@@ -109,6 +126,7 @@ header a:hover {
   margin-left: 5%;
   margin-right: 5%;
   padding-bottom: 5%;
+  position: relative;
 }
 
 
@@ -143,6 +161,9 @@ header a:hover {
 
 .heart i{font-size: 110px;}
 
+.story {text-align: center;}
+.story p{background-color: white;
+margin: 3%;}
 
 /*------Section 2.1 Our Story-----*/
 .aboutStyle p{background-color: white;}
@@ -192,6 +213,10 @@ color:black;
 #TheWedding p{
   background-color: white;
 }
+
+/*-----Blog Posts-----*/
+.blogPosts {
+  margin:3%;}
 
 /*-----Section 7 Happily Ever After Party----*/
 #AfterParty p{

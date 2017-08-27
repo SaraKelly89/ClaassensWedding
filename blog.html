@@ -6,14 +6,14 @@ title: My Blog
 <section>
 <h1> Recent Posts </h1>
 
-<div class="grid">
+<div>
 
 {% for post in site.posts %}
 
-<div class="postPreview">
+<div class="blogPosts">
   <img src="{{post.featured-image}}" />
   <h3> {{post.title}} </h3>
-  <p> {{post.description}} </p>
+  <p> {{content}} </p>
   <p> {{post.date}} </p>
   <p> {{post.author}} </p>
 </div>
