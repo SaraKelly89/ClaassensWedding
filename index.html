@@ -178,15 +178,16 @@ bottom:
 <section id="Blog" class="bgColored">
     <h1 class="padded-2"> Recent Journal Entries </h1>
 
-<div class="owl-carousel owl-theme">
+<div class="grid">
     {% for post in site.posts limit:3 %}
-
+<a href="/blog.html" class="noDecoration">
     <div class="postPreview col-4">
       <img src="{{post.featured-image}}" />
       <h3> {{post.title}} </h3>
       <p> {{post.description}} </p>
       <p> {{post.date | date_to_long_string}} </p>
       <p> {{post.author}} </p>
+</a>
       <a class="seePhotos padded-2" href="photos.html"> See Photos </a>
     </div>
 

@@ -218,6 +218,15 @@ color:black;
 .blogPosts {
   margin:3%;}
 
+.noDecoration {
+  text-decoration: none;
+  color: black;
+}
+
+.noDecoration:hover{
+  color: #888888;
+}
+
 /*-----Section 7 Happily Ever After Party----*/
 #AfterParty p{
   background-color: white;}
