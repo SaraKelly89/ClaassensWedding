@@ -181,17 +181,17 @@ bottom:
 <div class="grid">
 
     {% for post in site.posts limit:3 %}
-<a href="/blog.html" class="col-4 noDecoration">
-    <div class="postPreview">
-      <img src="{{post.featured-image}}" />
-      <h3> {{post.title}} </h3>
-      <p> {{post.description}} </p>
-      <p> {{post.date | date_to_long_string}} </p>
-      <p> {{post.author}} </p>
-    <a class="seePhotos padded-2" href="photos.html"> See Photos </a>
-    </div>
-    </a>
+    <a href="/blog.html" class="col-4 noDecoration">
+      <div class="postPreview">
+        <img src="{{post.featured-image}}" />
+        <h3> {{post.title}} </h3>
+        <p> {{post.description}} </p>
+        <p> {{post.date | date_to_long_string}} </p>
+        <p> {{post.author}} </p>
+      </div>
+      <a class="seePhotos padded-2" href="photos.html"> See Photos </a>
 
+    </a>
 
 
     {% endfor %}
