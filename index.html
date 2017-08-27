@@ -179,9 +179,10 @@ bottom:
     <h1 class="padded-2"> Recent Journal Entries </h1>
 
 <div class="grid">
+
     {% for post in site.posts limit:3 %}
-<a href="/blog.html" class="noDecoration">
-    <div class="postPreview col-4">
+<a href="/blog.html" class=" col-4 noDecoration">
+    <div class="postPreview">
       <img src="{{post.featured-image}}" />
       <h3> {{post.title}} </h3>
       <p> {{post.description}} </p>
