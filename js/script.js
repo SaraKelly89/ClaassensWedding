@@ -5,8 +5,12 @@ $( document ).ready(function() {
     $(".burger-menu").slideToggle();
     $(".burger-button").toggleClass("active");
   });
+$(".burger-menu").click(function(){
+  $(".burger-button").toggleClass("active");
+  $(".burger-menu").slideToggle();
+});
 
-$(".owl-carousel").owlCarousel();
+/*$(".owl-carousel").owlCarousel();
   loop:true,
   margin:10,
   nav:true,
@@ -24,6 +28,6 @@ $(".owl-carousel").owlCarousel();
       1000 : {
         items:3
       }
-  }
+  }*/
 
 });

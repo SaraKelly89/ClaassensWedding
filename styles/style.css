@@ -12,12 +12,13 @@ img {
   display: block;
 }
 
-h1, h2, h3, h4, h5, h6, p, a {
+h1,h2, h3, h4, h5, h6, p, a {
   /*border: 1px solid rgb(220,220,220);*/
 }
 
 /*universial styles*/
 body {
+font-size: 16px;
 background-color: #FAFAFA;
 overflow-x: hidden;
 }
@@ -45,21 +46,23 @@ section {
 
 h1 {
 font-family: 'Amatic SC', cursive;
-font-size: 40px;
+font-size: 2.6em;
 text-align: center;
 }
 
 h2 {font-family: 'Josefin Slab', sans-serif;
-  font-size: 25px;
+  font-size: 2.3em;
   margin: 1%;
+  text-align: center;
+  padding: 1%;
 }
 
 h3 {font-family: 'Amatic SC', cursive;
-    font-size: 20px;
+    font-size: 2em;
     padding: 1%;}
 
 p {font-family: 'Noticia Text', serif;
-  font-size: 15px;
+  font-size: 1.3em;
   font-weight: lighter;}
 
 .seePhotos {
@@ -79,7 +82,7 @@ p {font-family: 'Noticia Text', serif;
 
 header a {
   color: black;
-  font-size: 20px;
+  font-size: 1.5em;
   text-decoration: none;
   transition: 2s;
   text-align: center;
@@ -121,67 +124,61 @@ polygon{
 /*-----Section 1 background image-----*/
 
 .banner {
-  height: 75vh;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: auto;
   background-size: cover;
   margin-left: 5%;
   margin-right: 5%;
-  padding-bottom: 5%;
+  padding-bottom: 35%;
   position: relative;
+  border-radius:8px;
 }
 
+/*-----Section 3 The Wedding Date-----*/
+.weddingDate {padding: 1%;
+  margin-left: 5%;
+  margin-right: 5%;}
+/*.weddingDate h1{
+  font-size: 19px;}*/
 
-/*-----Section 2 About Us-----*/
-#OurStory h2 {
-  font-size: 50px;
-  text-align: center;
-}
-
+/*-----Section 2 polaroids-----*/
 .polaroid div {
   background-color: white;
 }
 
 .polaroid {
-  border: solid 1px black;
   padding-top: 5%;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 10%;
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-top: 0;
-  background-color: white;
+   padding-left: 5%;
+   padding-right: 5%;
+   padding-bottom: 10%;
+   margin-top: 0;
+   margin-right: 10%;
+   margin-left: 10%;
+   width: 80%;
+   background-color: white;
+   box-shadow: 0 4px 8px 0
+   rgba(0, 0, 0, 0.2), 0 6px
+   20px 0 rgba(0, 0, 0, 0.19);
 }
-
-#OurStory h3{
-  font-size: 30px;
-  margin-top: 5%;
-}
-
 .heart {text-align: center;}
 
 .heart i{font-size: 110px;}
 
-.story {text-align: center;}
-.story p{background-color: white;
-margin: 3%;}
-
-/*------Section 2.1 Our Story-----*/
-.aboutStyle p{background-color: white;}
-}
-
-/*-----Section 3 The Wedding Date-----*/
-.weddingDate {padding: 0;}
-.weddingDate h1{
-  font-size: 50px;}
-
-/*-----Section 4 Three Tile Buttons-----*/
+/*-----Section 3 Three Tile Buttons-----*/
 .tileGrey {
   background-color: #BDC3C7;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 .tile {
   text-decoration: none;
   background-color: white;
   border: 3px solid black;
+  margin-top: 1%;
+  margin-bottom: 1%;
+
 }
 
 .tile a{text-decoration: none;
@@ -190,14 +187,33 @@ color:black;
 
 .tile a:hover{color: #888888;}
 
+tile i{
+  margin: 2%;
+}
+
 /*.tile h2, p {background-color: white;}*/
 
+
+/*------Section 4 Our Story-----*/
+
+
+#OurStory h3{
+  font-size: 1.5em;
+  margin-top: 5%;
+}
+
+.story {text-align: center;}
+.story p{background-color: white;
+margin: 3%;;
+}
+
+.aboutStyle p{background-color: white;
+}
 
 
 /*-----Section 5 Love Quote-----*/
 
-.loveQuote {padding: 2%;
-  font-size: 50px;}
+.loveQuote {padding: 2%;}
 
   .loveQuote h2{
     font-family: Amatic+SC;
@@ -377,12 +393,36 @@ a.top-button:hover{
   opacity:0;
 }
 
+.burger-menu li{list-style:none}
+
 /*Media Quires*/
-@media all and (max-width: 800px){
+@media all and (min-width: 960px){
+  body{
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 959px) and (min-width:600px){
   .mob-show{
     display:block;
   }
   .mob-hide{
     display:none;
   }
+  body{
+    font-size: 16px;
+  }
 }
+  @media all and (max-width: 599px){
+    .mob-show{
+      display:block;
+    }
+    .mob-hide{
+      display:none;
+    }
+    body{
+      font-size: 10px;
+    }
+
+  }
+  /* add media quires for text sizing here */
