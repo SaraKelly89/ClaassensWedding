@@ -40,6 +40,11 @@ section {
   padding-bottom: 5%;
 }
 
+.margin-3{
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
 .margin-5{
   margin-left: 5%;
   margin-right: 5%;
@@ -79,9 +84,6 @@ p {font-family: 'Noticia Text', serif;
 .seePhotos:hover {
   color: #888888;
 }
-
-
-
 
 /*-------------hearder section styles----------*/
 
@@ -145,8 +147,23 @@ polygon{
 .weddingDate {padding: 1%;
   margin-left: 5%;
   margin-right: 5%;}
-/*.weddingDate h1{
-  font-size: 19px;}*/
+
+
+  /*------Section the plan-----*/
+  #thePlan h3{
+    font-size: 1.5em;
+  }
+
+  .thePlan {text-align: center;
+    background-color: white;
+    margin: 3%;
+    padding-left: : 3%;
+    padding-right: : 3%;
+    padding: 3%;
+    padding-bottom: 3%;}
+  .thePlan p{
+    padding-bottom: 2%;
+  }
 
 /*-----Section 2 polaroids-----*/
 .polaroid div {
@@ -174,8 +191,8 @@ polygon{
 /*-----Section 3 Three Tile Buttons-----*/
 .tileGrey {
   background-color: #BDC3C7;
-  margin-left: 2%;
-  margin-right: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .tile {
   text-decoration: none;
@@ -193,23 +210,24 @@ color:black;
 .tile a:hover{color: #888888;}
 
 tile i{
-  margin: 2%;
+  margin: 3%;
 }
-
-/*.tile h2, p {background-color: white;}*/
-
 
 /*------Section 4 Our Story-----*/
 
-
-#OurStory h3{
+#ourStory h3{
   font-size: 1.5em;
-  margin-top: 5%;
 }
 
-.story {text-align: center;}
-.story p{background-color: white;
-margin: 3%;;
+.story {text-align: center;
+  background-color: white;
+  margin: 3%;
+  padding-left: : 3%;
+  padding-right: : 3%;
+  padding: 3%;
+  padding-bottom: 3%;}
+.story p{
+  padding-bottom: 2%;
 }
 
 .aboutStyle p{background-color: white;
@@ -253,12 +271,21 @@ margin: 3%;;
 #AfterParty p{
   background-color: white;}
 
+  #AfterParty h3{
+    font-family: 'Noticia Text', serif;
+    font-weight: normal;
+    background-color: white;}
+
   #AfterParty span{
-    font-weight: bold;
-  font-size: 15px}
+  font-weight: bold;
+  font-size: 1em;}
+
+  #AfterParty map{
+    margin: 2%;}
 
   .largeText {
     font-size: 19px;}
+
 /*Timeline Styles */
 .timeline-bottom, .timeline-top{
   text-align:center;
@@ -323,9 +350,17 @@ margin: 3%;;
   resize: none;
 }
 
-.rsvpStyle input[type=submit]:hover,
-.rsvpStyle input[type=button]:hover{
-  background: #555;
+.button button{
+  font-family: 'Amatic SC', cursive;
+  font-size: 2em;
+  border: 1px dashed #555;
+  padding: 8px 10px 8px 10px;
+  border-radius: 5px;
+  margin-top: 3%;
+  background-color: #EFEEEE;
+}
+.button button:hover{
+  background-color:#FAFAFA ;
 }
 
 /*----- soft scroll to top floating button -----*/
@@ -336,8 +371,8 @@ a.top-button {
   z-index: 45;
   border: none;
   outline: none;
-  background-color: #888888;
   color: white;
+  background-color: #888888;
   cursor: pointer;
   padding: 15px;
   border-radius: 10px;
@@ -366,7 +401,7 @@ a.top-button:hover{
   padding: 15px 11px;
   font-size: 20px;
   font-weight: 300;
-  color: #C3BFBC;
+  color: #2896BA;
   font-family: 'Alegreya Sans SC', sans-serif;
   display:block;
   padding:5px 15px;
@@ -390,7 +425,7 @@ a.top-button:hover{
 }
 .burger-button span{
   width: 25px;
-  border: 2px solid #555;
+  border: 2px solid #2896BA;
   background-color: black;
   display: block;
   border-radius: 22px;
@@ -431,6 +466,7 @@ a.top-button:hover{
 
 /*Media Quires*/
 @media all and (min-width: 960px){
+
   body{
     font-size: 20px;
   }
