@@ -17,12 +17,16 @@ h1,h2, h3, h4, h5, h6, p, a {
 }
 
 /*universial styles*/
+header, footer, section{
+  overflow: hidden;
+  max-width: 100%;
+  }
+  
 body {
 font-size: 16px;
 background-color: #FAFAFA;
 overflow-x: hidden;
 }
-
 
 section {
   padding: 2%;
