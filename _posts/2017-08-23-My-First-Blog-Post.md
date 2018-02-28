@@ -1,11 +1,9 @@
 ---
 layout: default
-title: My First Blog Post
-description: This is a short description
+title: ClaassensWedding.com
+description: Why spend a few hundred dollars having someone else create a wedding website for you when you could spend a few thousand learning to do it yourself?
 featured-image: Images/croped/mollySaraCrop.jpg
 author: Sara Kelly
+content:
 ---
-
-### Yayyyy HTML
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Why spend a few hundred dollars having someone else create a wedding website for you when you could spend a few thousand learning to do it yourself?
