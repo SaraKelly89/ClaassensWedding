@@ -21,7 +21,7 @@ header, footer, section{
   overflow: hidden;
   max-width: 100%;
   }
-  
+
 body {
 font-size: 16px;
 background-color: #FAFAFA;
@@ -52,6 +52,16 @@ section {
 .margin-5{
   margin-left: 5%;
   margin-right: 5%;
+}
+
+.blackBorder{
+  border: solid black;
+}
+.largeText {
+  font-size: 19px;}
+
+.largertext{
+  font-size: 1.5em;
 }
 
 .bgColored {
@@ -273,7 +283,8 @@ tile i{
 
 /*-----Section 7 Happily Ever After Party----*/
 #AfterParty p{
-  background-color: white;}
+  background-color: white;
+  }
 
   #AfterParty h3{
     font-family: 'Noticia Text', serif;
@@ -287,8 +298,6 @@ tile i{
   #AfterParty map{
     margin: 2%;}
 
-  .largeText {
-    font-size: 19px;}
 
 /*Timeline Styles */
 .timeline-bottom, .timeline-top{

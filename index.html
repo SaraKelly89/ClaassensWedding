@@ -200,7 +200,7 @@ bottom:
         <p> {{post.description}} </p>
         <p> {{post.date | date_to_long_string}} </p>
         <p> {{post.author}} </p>
-      <a class="seePhotos padded-2" href="photos.html"> See Photos </a>
+      <a class="seePhotos padded-2" href="photos.html">~ See Photos ~</a>
 
     </a>
 </div>
@@ -216,10 +216,10 @@ bottom:
   <div class="col-12">
     <h2> Happily Ever After Party <i class="fa fa-glass" aria-hidden="true"></i></h2>
   </div>
-  <div class="col-6_xs-12">
-      <h3 class="padded-2">
-        To our nearest and dearest,  </h3>
-        <p class="padded-2 afterParty">
+  <div class="col-6_xs-12 blackBorder">
+      <p class="padded-2 largertext">
+        To our nearest and dearest,  </p>
+        <p class="padded-2 largertext">
         Sara and Carl request the pleasure of your company at their post wedding celebrations. Dinner and drinks will be held at their home in Sydney.  </p>
         <p class="padded-2"> </p>
 
@@ -235,32 +235,5 @@ bottom:
     <div class="col-6_xs-12 map">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.4148597986728!2d150.7828656152064!3d-33.72408698069654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129b395430924f%3A0xf3443f773832967a!2s40+MacKay+Circuit%2C+Ropes+Crossing+NSW+2760!5e0!3m2!1sen!2sau!4v1519638682867" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
-
-    <!-- Timeline of evenings events goes here -->
-    <!--
-<div class="tileGrey col-12">
-    <div class="timeline-top grid">
-    {% for top in page.top %}
-      <div class="col-2">
-        <p>{{top.time}}<br>{{top.description}}</p>
-        <i class="fa fa-circle" aria-hidden="true"></i>
-      </div>
-      <div class="col-2">
-        <!--EMPTY DIV-->
-    <!--  </div>
-    {% endfor %}
-    </div>
-    <div class="timeline-bottom grid">
-      {% for bottom in page.bottom %}
-      <div class="col-2">
-        <!--Empty div-->
-    <!--  </div>
-      <div class="col-2">
-        <i class="fa fa-circle" aria-hidden="true"></i>
-        <p>{{bottom.time}}<br>{{bottom.description}}</p>
-      </div>
-      {% endfor %}
-    </div>
-  </div>  -->
 
   </section>
