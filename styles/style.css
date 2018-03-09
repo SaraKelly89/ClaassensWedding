@@ -55,7 +55,7 @@ section {
 }
 
 .blackBorder{
-  border: solid black;
+  border: dashed 1px black;
 }
 .largeText {
   font-size: 19px;}
@@ -117,11 +117,11 @@ header a:hover {
 }
 
 .NavLeft {
-  text-align: right;
+  text-align: center;
 }
 
 .NavRight {
-  text-align: left;
+  text-align: center;
 }
 svg{
   position: absolute;
@@ -154,7 +154,7 @@ polygon{
   margin-right: 5%;
   padding-bottom: 35%;
   position: relative;
-  border-radius:8px;
+  border-radius: 1px;
 }
 
 /*-----Section 3 The Wedding Date-----*/
@@ -276,7 +276,6 @@ tile i{
   color: black;
 }
 
-
 .noDecoration:hover{
   color: #888888;
 }
@@ -297,42 +296,6 @@ tile i{
 
   #AfterParty map{
     margin: 2%;}
-
-
-/*Timeline Styles */
-.timeline-bottom, .timeline-top{
-  text-align:center;
-  position:relative;
-}
-.timeline-top{
-  border-bottom:2px solid black;
-  margin-top: 2%;
-  margin-bottom:-2px;
-}
-.timeline-top i{
-  position:absolute;
-  bottom:-10px;
-  color: black;
-}
-.timeline-top p{
-  border:1px solid #EFEEEE;
-  margin-bottom:-15px;
-  padding-bottom:3%;
-}
-.timeline-bottom{
-  border-top:2px solid black;
-  margin-top:-2px;
-}
-.timeline-bottom i{
-  position:absolute;
-  top:-10px;
-  color: black;
-}
-.timeline-bottom p{
-  border:1px solid #EFEEEE;
-  margin-top:1px;
-  padding-top:3%;
-}
 
 /*-----Section 8 Footer RSVP form-----*/
 
