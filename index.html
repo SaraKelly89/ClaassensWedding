@@ -15,7 +15,7 @@ bottom:
 
   <!--Section The Wedding date-->
 <section class="weddingDate bgColored">
-  <h1> ~Claassens Wedding~
+  <h1 class=mob-show> ~Claassens Wedding~
   </h1>
 </section>
 <!--Section The Plan-->
@@ -197,16 +197,17 @@ bottom:
 
         <img src="{{post.featured-image}}" />
         <h3> {{post.title}} </h3>
-        <p> {{post.description}} </p>
+        <p> {{post.description}}... </p>
         <p> {{post.date | date_to_long_string}} </p>
         <p> {{post.author}} </p>
       <a class="seePhotos padded-2" href="photos.html">~ See Photos ~</a>
 
     </a>
+
 </div>
 
     {% endfor %}
-
+<p> Click any previw to view the full entry or go to the blog page to view all previous entries </p>
 </div>
 
 </section>
