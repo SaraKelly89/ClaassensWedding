@@ -276,8 +276,11 @@ tile i{
 }
 
 .noDecoration:hover{
-  color: #888888;
-}
+  color: #888888;}
+
+.fancy{;
+font-style: italic;}
+
 
 /*-----Section 7 Happily Ever After Party----*/
 #AfterParty p{
