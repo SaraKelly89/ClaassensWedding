@@ -1,7 +1,7 @@
 ---
 layout: default
 title: my first digital journal entry
-description:Why spend hundreds of dollars having someone else create a wedding website for you when you could learn to do it yourself? This is the question I asked myself about 6 months ago. While some might call me control freak, I like to think my want to personalise and create things exactly as I imagine them comes from
+description: Why spend hundreds of dollars having someone else create a wedding website for you when you could learn to do it yourself? This is the question I asked myself about 6 months ago. While some might call me control freak, I like to think my want to personalise and create things exactly as I imagine them comes from
 featured-image: Images/croped/laptopPhoto.jpg
 author: Sara Kelly
 ---
