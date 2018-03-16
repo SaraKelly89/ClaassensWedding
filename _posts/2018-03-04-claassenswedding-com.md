@@ -19,3 +19,5 @@ The story of how this website came to be.
 <br>In the end, the result has been worth all the blood, sweat, Bali belly, late night skype calls and literal tears, because here it is!! A website built entirely by me, not a template in site! A website containing our story, our reasons for vearing away from the traditional wedding, a place for us to share photos from the day as well as being flexible enough that it can be updated with stories from our honeymoon while we travel around Europe. Most importantly though, this site serves as the invitation for our closest friends and family to join us at our post elopement/micro wedding celebrations. To me it enables us to have the small fairytale wedding we so strongly desire, while still providing a method to share this special time in our lives with the ones we love.
 
 <br>Thank you all for being here with us
+
+<!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/c96438f7fafe59e198bb348d55498f96.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
