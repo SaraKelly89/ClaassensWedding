@@ -20,9 +20,7 @@ The story of how this website came to be.
 
 <br>Thank you all for being here with us
 <br>
-<br>Below are some photos from my time at the instatute of code
 
-<!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/9299df2e22c6548ca895a5fd81c7c24f.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
 
 
 
