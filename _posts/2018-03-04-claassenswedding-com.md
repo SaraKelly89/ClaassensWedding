@@ -15,6 +15,7 @@ The story of how this website came to be.
 </div> 
 
 <div class=col-4>
+<img src="{{featured-image}}" />
 </div>
 
 <br> I arrived in Bali with the idea for a wedding website that could be used for more than just RSVPs and directions to the venue on the day. Something that wouldn't out grow its usefulness the day after the wedding. I wanted something that could be dynamic and update-able. That would be useful to a couple from the very early stages of sending out invites, all the way up to, and even past the day of the wedding. I wanted a single, go-to place for guests to find photos from the wedding they had just attended, to read the couples love story, find directions to the venue but I also wanted more.&nbsp; I had the idea that with all the travel blogs and instagram accounts from holiday destinations around the world, that I would be great if the newly wedding couple were able to share photos and stories from there honey-moon somewhere other than just on facebook. Somewhere they could look back on any time and not have this special time lost in the clutter of everyday uploads.
