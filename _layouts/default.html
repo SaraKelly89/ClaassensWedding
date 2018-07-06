@@ -3,38 +3,86 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Claassens Wedding</title>
+  <title>Lance & Lea Wedding by the Sea</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="/styles/owl.carousel.min.css">
 <link rel="stylesheet" href="/styles/owl.theme.default.css">
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab|Noticia+Text|Amita" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Black+And+White+Picture|Indie+Flower" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.4.0/gridlex.min.css">
   <link rel="stylesheet" href="/styles/style.css">
-  <script src="https://use.fontawesome.com/d185550c4b.js">
+  <script src="https://use.fontawesome.com/d185550c4b.js"> </script>
 
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
+
+  <script>
+//auto expand textarea
+function adjust_textarea(h) {
+    h.style.height = "20px";
+    h.style.height = (h.scrollHeight)+"px";
+}
 </script>
+
+  <style>
+  .parallax{
+  /*background image*/
+  background-image: url('/Images/beach3.jpg');
+  /*height*/
+  min-height: 500px;
+
+  /*parallax scrolling effect*/
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  }
+  </style>
+
 </head>
 
 <body>
 
+  <script>
+  // Set the date we're counting down to
+  var countDownDate = new Date("Mar 9, 2019 00:00:00").getTime();
+
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+
+      // Get todays date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now an the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+      // Output the result in an element with id="demo"
+      document.getElementById("timer").innerHTML = days + "days " + hours + "hours "
+      + minutes + "minutes " + "till we say \"I do\"";
+
+      // If the count down is over, write some text
+      if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("timer").innerHTML = "Happily Married on the 9th of March 2019";
+      }
+  }, 1000);
+  </script>
+
+
   <!--Header Navigation-->
   <header id="home">
-
     <div class="mob-hide">
     <nav class="grid-middle mob-hide">
-      <div class="NavLeft col-5">
-        <a href="blog.html"> Honey-Moon Journal </a>
-          <a href="index.html#OurStory"> Our Story </a>
-          <a href="index.html#TheWedding"> The Wedding </a>
+      <div class="col-7 margin-3">
+        <a href="index.html"><h1>  Lance & lea's Beach Wedding </h1></a>
       </div>
-      <div class="col-2">
-        <a href="index.html"><h1> Claassens Wedding </h1></a>
-      </div>
-      <div class="NavRight col-5">
-          <a href="photos.html"> Gallery </a>
+      <div class="NavRight col-4">
+        <a href="photos.html"> Gallery </a>
           <a href="index.html#RSVP"> RSVP </a>
-          <a href="index.html#AfterParty"> Happily Ever After Party </a>
       </div>
     </nav>
   </div>
@@ -50,55 +98,48 @@
           <nav>
             <ul>
               <li><a href="index.html#home">Home</a></li>
-              <li><a href="index.html#OurStory">Our Story</a></li>
-              <li><a href="index.html#TheWedding">The Wedding</a></li>
-              <li><a href="index.html#Blog">Honey Moon Journal</a></li>
-              <li><a href="index.html#AfterParty">Happily Ever After Party</a></li>
               <li><a href="photos.html">Gallery</a></li>
               <li><a href="index.html#RSVP">RSVP</a></li>
             </ul>
           </nav>
         </div>
     </div>
-  </div>
-
 
 {{content}}
 
 
 
     <!-- Section 8 Footer RSVP form -->
-    <section id="RSVP" class="grid-center bgColored padded-5">
+    <section id="RSVP" class="grid-center padded-5">
 
-      <h2 class="col-12 grid-center"> RSVP </h2>
-      <form class="grid-center col-11" method="POST" action="http://formspree.io/candela.electrical@gmail.com">
-<div class=rsvpStyle>
-        <div class="col-12">
-          <label for="name"> Your Name </label>
-          <input type="text" name="name" id="name" placeholder="" required="true"/>
-        </div>
+      <h1 class="col-12 grid-center"> RSVP </h1>
+      <form class="grid-center col-11" method="POST" action="http://formspree.io/lancejscarrott@gmail.com">
+<div class="form-style">
+<label for="Name">
+<span>Name of Guests</span><input type="text" name="Name" required="true" />
+</label>
+<label for="email">
+<span>Email Address</span><input type="email" name="Email" required="true" />
+</label>
+<label for="Phone">
+<span>Phone Number</span><input type="text" name="Phone Number" required="true" />
+</label>
 
-        <div class="col-12">
-          <lable for="email"> Your Email </lable>
-          <input type="email" name="email" placeholder="" required="true">
-        </div>
+<label for="Attendance">
+<span>Will you be Attending?</span>
+<input type="radio" name="Attendance" value="Attending" checked/> accepts with pleasure <br>
+<input type="radio" name="Attendance" value="notAttending"/> regretfully declines <br>
+</label>
 
-        <div class="col-12">
-          <label for="attending"> Will you be attending our Happily Ever After Party? </label>
-          <textarea name="attending" placeholder="" required="true"></textarea>
-        </div>
+<label for="Diet">
+<span>Dietary Requirements</span><textarea name="Dietary Requirements" onkeyup="adjust_textarea(this)" ></textarea>
+</label>
+<label>
+<input type="submit" value="Send Letter" />
+</label>
+</div>
 
-        <div class="col-12">
-          <lable for="message"> Message for the couple</lable>
-          <textarea name="message" placeholder=" please include any dietary requirements if attending"></textarea>
-        </div>
-</div> <!--closing div to have send button outside the RSVP note border-->
-
-        <div class="col-12 button">
-          <button type="submit">Send RSVP</button>
-        </div>
-
-      </form>
+</form>
 
       <a class="top-button" href="#home"> <i class="fa fa-angle-double-up" aria-hidden="true"> </i> </a>
 

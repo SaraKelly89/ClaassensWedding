@@ -3,38 +3,86 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Claassens Wedding</title>
+  <title>Lance & Lea Wedding by the Sea</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="/styles/owl.carousel.min.css">
 <link rel="stylesheet" href="/styles/owl.theme.default.css">
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab|Noticia+Text|Amita" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Black+And+White+Picture|Indie+Flower" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.4.0/gridlex.min.css">
   <link rel="stylesheet" href="/styles/style.css">
-  <script src="https://use.fontawesome.com/d185550c4b.js">
+  <script src="https://use.fontawesome.com/d185550c4b.js"> </script>
 
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
+
+  <script>
+//auto expand textarea
+function adjust_textarea(h) {
+    h.style.height = "20px";
+    h.style.height = (h.scrollHeight)+"px";
+}
 </script>
+
+  <style>
+  .parallax{
+  /*background image*/
+  background-image: url('/Images/beach3.jpg');
+  /*height*/
+  min-height: 500px;
+
+  /*parallax scrolling effect*/
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  }
+  </style>
+
 </head>
 
 <body>
 
+  <script>
+  // Set the date we're counting down to
+  var countDownDate = new Date("Mar 9, 2019 00:00:00").getTime();
+
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+
+      // Get todays date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now an the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+      // Output the result in an element with id="demo"
+      document.getElementById("timer").innerHTML = days + "days " + hours + "hours "
+      + minutes + "minutes " + "till we say \"I do\"";
+
+      // If the count down is over, write some text
+      if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("timer").innerHTML = "Happily Married on the 9th of March 2019";
+      }
+  }, 1000);
+  </script>
+
+
   <!--Header Navigation-->
   <header id="home">
-
     <div class="mob-hide">
     <nav class="grid-middle mob-hide">
-      <div class="NavLeft col-5">
-        <a href="blog.html"> Honey-Moon Journal </a>
-          <a href="index.html#OurStory"> Our Story </a>
-          <a href="index.html#TheWedding"> The Wedding </a>
+      <div class="col-7 margin-3">
+        <a href="index.html"><h1>  Lance & lea's Beach Wedding </h1></a>
       </div>
-      <div class="col-2">
-        <a href="index.html"><h1> Claassens Wedding </h1></a>
-      </div>
-      <div class="NavRight col-5">
-          <a href="photos.html"> Gallery </a>
+      <div class="NavRight col-4">
+        <a href="photos.html"> Gallery </a>
           <a href="index.html#RSVP"> RSVP </a>
-          <a href="index.html#AfterParty"> Happily Ever After Party </a>
       </div>
     </nav>
   </div>
@@ -50,289 +98,143 @@
           <nav>
             <ul>
               <li><a href="index.html#home">Home</a></li>
-              <li><a href="index.html#OurStory">Our Story</a></li>
-              <li><a href="index.html#TheWedding">The Wedding</a></li>
-              <li><a href="index.html#Blog">Honey Moon Journal</a></li>
-              <li><a href="index.html#AfterParty">Happily Ever After Party</a></li>
               <li><a href="photos.html">Gallery</a></li>
               <li><a href="index.html#RSVP">RSVP</a></li>
             </ul>
           </nav>
         </div>
     </div>
-  </div>
-
 
   </header>
+<div class="parallax" </div>
+
   <!--Section 1 background image-->
-  <section class="banner" style="background-image:url('/Images/dancing4.jpg')" ;>
-    <!--no content a background image will go here-->
-    <svg viewBox="0 0 1700 100" enable-background="new 0 0 1700 100" class="bottomTriangle">
-        <polygon class="bgTriangle" points="0,2, 0,100 1700,100 1700,2 850,100"></polygon>
-      </svg>
+  <section class="grid">
+    <div class="mob-show col-12">
+    <h1> Lance & Lea </h1>
+  </div>
+
+    <div class="col-6">
+    <p class="bgColored padded-2 rounded"> Go into a room to decide you didn't want to be in there anyway reward the chosen human with a slow blink throw down all the stuff in the kitchen. munch on tasty moths and sniff all the things if it fits, i sits. stretch tongue and leave it slightly out, blep. I show my fluffy belly but it's a trap! if you pet it i will tear up your hand, meow, and throw up because i ate plants ignore the human until she needs to get up, then climb on her lap and sprawl fall asleep upside-down attack claws fluff everywhere meow miao french ciao litterbox. decide to want nothing to do with my owner today, cats secretly make all the worlds muffins. Wake up wander around the house making large amounts of noise jump on top of your human's bed and fall asleep again shake treat bag, or scamper, and licks your face or instantly break out into full speed gallop across the house at 4 in the morning. </p>
+  </div>
+    <div class="col-6_xs-6">
+      <div class="polaroid">
+        <img src="/Images/LLdancing1.jpeg">
+      </div>
+    </div>
   </section>
 
   <!--Section The Wedding date-->
-<section class="weddingDate bgColored">
-  <h1 class=mob-show> ~Claassens Wedding~
-  </h1>
-</section>
-<!--Section The Plan-->
-<section id="thePlan">
-<div class="thePlan">
-<!--  <h2> Title Place holder </h2> -->
-    <p>
-  We have chosen to have a private ceremony on the 10th of November 2018 in Iceland. However, we would love to celebrate with you, our nearest and dearest, at our Happily Ever-After party to be held on the 15th of December 2018. If you wish to attend please fill out the RSVP at the bottom of this page </p>
-  <p>  For those that are interested, below are some details on how we met, our plans for Iceland and a digital travel journal which will later follow our Honeymoon adventures  </p>
-  <p>  </p>
-</div>
-
-  <!--Section 2 About us-->
-  <section class="grid">
-    <h2 class="col-12-center"> Bride and Groom </h2>
-    <div class="col-5_xs-6">
-      <div class="polaroid">
-        <img src="/Images/Carl1.jpg">
-        <h3> Carl Claassens </h3>
-      </div>
-    </div>
-
-    <div class="heart col-2-middle_xs-0">
-      <i class="fa fa-heart-o" aria-hidden="true"></i>
-    </div>
-
-    <div class="col-5_xs-6">
-      <div class="polaroid">
-        <img src="/Images/Sara1.jpg">
-        <h3> Sara Kelly </h3>
-      </div>
-    </div>
+<section>
+  <h1 id="timer"> </h1>
 </section>
 
-<!--Section 3 Three Tile Buttons-->
-<!-- This is probably redundant..
-<section class="grid-spaceAround tileGrey">
-<div class="col-3_xs-12 tile">
-  <a href="#TheWedding">
-    <h3 class="paddedTB">The Wedding<i class="fa fa-heart" aria-hidden="true"></i></h3>
-    <p class="paddedTB"> We have chosen to have an intimate wedding ceremony which is to take place on the 10th of November 2018 in Iceland.
-      Click here or scroll down for all the details on our special day!
-    </p>
+<!--Section  about us -->
+<section class="grid">
+  <h1 class="col-12-center"> About Us </h1>
+  <div class="col-6">
+    <div class="polaroid">
+      <img src="/Images/lance3.jpg">
+    </div>
+  </div>
+<!--
+  <div class="col-12 mob-show">
+    fall asleep upside-down attack claws fluff everywhere meow miao french ciao litterbox. decide to want nothing to do with my owner today, cats secretly make all the worlds muffins.
+  </div> -->
+
+  <div class="col-6">
+    <div class="polaroid">
+      <img src="/Images/lea2.jpg">
+    </div>
+  </div>
+<!--
+  <div class="col-12 mob-show">
+    fall asleep upside-down attack claws fluff everywhere meow miao french ciao litterbox. decide to want nothing to do with my owner today, cats secretly make all the worlds muffins.
+  </div> -->
+
+  <div class="col-6 mob-hide">
+    fall asleep upside-down attack claws fluff everywhere meow miao french ciao litterbox. decide to want nothing to do with my owner today, cats secretly make all the worlds muffins.
+  </div>
+
+  <div class="col-6 mob-hide">
+    fall asleep upside-down attack claws fluff everywhere meow miao french ciao litterbox. decide to want nothing to do with my owner today, cats secretly make all the worlds muffins.
+  </div>
+</section>
+
+<!-- instagram widget here -->
+<section class="bgColored rounded"
+<!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/0c56a95b95b15ea6b88466470bf092c4.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+
+</section>
+
+<!-- timeline of events and map here -->
+<section class="grid">
+  <div class="col-6_xs-12 timeline">
+    <div class="container left">
+      <div class="content">
+        <h2><i class="far fa-heart margin-5"></i>ceremony</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+    <div class="container right">
+      <div class="content">
+        <h2><i class="fas fa-camera margin-5"></i>photos</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+    <div class="container left">
+      <div class="content">
+        <h2><i class="fas fa-glass-martini margin-5"></i>reception</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+  </div>
+    <!--timeline-->
+
+
+
+  <!--map-->
+  <div class="col-6_xs-12 ">
+    <a href="https://goo.gl/maps/Aahqxgbi8L12">
+    <img src="/Images/weddingmap.png">
   </a>
-    </div>
-
-    <div class="col-3_xs-12 tile">
-      <a href="/blog.html">
-        <h3 class="paddedTB"> Honey Moon Journal <i class="fa fa-pencil" aria-hidden="true"></i> </h3>
-        <p class="paddedTB">A digital travel joural documenting our adventures leading up to the wedding and continuing as we travel through Europe on our Honeymoon.
-        </p>
-      </a>
-    </div>
-
-    <div class="col-3_xs-12 tile">
-      <a href="#AfterParty">
-        <h3 class="paddedTB"> Happily Ever After Party <i class="fa fa-glass" aria-hidden="true"></i> </h3>
-        <p class="paddedTB"> We would love to celebrate with you, our nearest and dearest upon our return with a Happily Ever-After Party! Click here or scroll down for time and place along with other helpful details.
-        </p>
-      </a>
-    </div>
-
-</section> -->
-
-    <!--Section 4 Our Story-->
-    <section id="OurStory">
-    <div>
-      <h2> Our Story - the fairytale edition </h2>
-      <div class="story">
-      <p class="padded-2"> Once upon a time there was an independent and motivated princess. She had it all, yet something was missing. With all her hard work and trappings of success, she had created a wonderful life albeit no one to share it with. She grew tired of SCADA duties, rapidly growing fortune, and beautiful seaside life. She left in search of adventure and companionship. Under the guise of expanding her realestate empire, she traveled north to the central coast. Upon her arrival, she became enamoured with a beautiful young man. In the past, they had met briefly at a ball or two but unfortunately had been otherwise occupied. Obviously the young man was not the royalty she was accustomed to in the capital, but he was not without his own savage charm.</p>
-      <p class="padded-2"> He loved her self-reliance and ambition. She fell for his dedication, wild spirit and humour. It wasn’t long before love blossomed and they decided to start life together. </p>
-    </div>
-    </div>
-<!-- Sounds a bit braggy maybe leave this out --
-    <div id="AboutCarl" class="col-12 grid aboutStyle bgColored">
-      <div class="col-6_xs-12 padded-2 aboutStyle">
-        <h2> Carl Claassens </h2>
-      <p class="padded-5">Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead. </p>
   </div>
-
-  <div class="col-6_xs-12 grid">
-
-      <div class="col-4">
-        <img src="Images/carls/carlViperCrop.jpg">
-      </div>
-
-<div class="grid col-8">
-
-      <div class="col-6">
-        <img src="Images/carls/carlSplitsCrop.jpg">
-      </div>
-
-      <div class="col-6">
-        <img src="Images\carls\serisierDancingCrop.jpg">
-      </div>
-
-      <div class="col-6">
-        <img src="Images\carls\carlZombiCrop.jpg">
-      </div>
-
-      <div class="col-6">
-        <img src="Images\carls\carlGlassesCrop.jpg">
-      </div>
-    </div>
-</div>
-
-</div>
-  <div id="AboutSara" class="grid aboutStyle bgColored">
-    <div class="col-6_xs-12 grid">
-
-          <div class="col-4">
-            <img src="Images\saras\familyPhotoCrop.jpg">
-          </div>
-
-    <div class="grid col-8">
-
-          <div class="col-6">
-            <img src="Images\saras\serisierDancing2Crop.jpg">
-          </div>
-
-          <div class="col-6">
-            <img src="Images\saras\leaninCrop.jpg">
-          </div>
-
-          <div class="col-6">
-            <img src="Images\saras\leatherCrop.jpg">
-          </div>
-
-          <div class="col-6">
-            <img src="Images\saras\engagedCrop.jpg">
-          </div>
-    </div>
-      </div>
-
-    <div class="col-6_xs-12 padded-2">
-      <h2> Sara Kelly </h2>
-        <p class="padded-5">There are fixed points throughout time where things must stay exactly the way they are. This is not one of them. This is an opportunity! Whatever happens here will create its own timeline, its own reality, a temporal tipping point. The future revolves around you, here, now, so do good! Bow ties are cool. Frightened people. Give me a Dalek any day. Brave heart, Clara. Come along, Pond! Thank you, Strax. And if I'm ever in need of advice from a psychotic potato dwarf, you'll certainly be the first to know</p>
-    </div>
-  </div>
-
-  end of commenting out -->
-
 </section>
-
-  <!-- Section 5 Love Quote-->
-  <section class="loveQuote bgColored">
-
-      <h1> <i class="fa fa-quote-left" aria-hidden="true"></i>
-       she knew she loved him when 'home' went from being a place to being a person
-      <i class="fa fa-quote-right" aria-hidden="true"></i> </h1>
-
-  </section>
-
-  <!-- Section 6 The Wedding -->
-  <section id="TheWedding" class="grid">
-    <div class="col-12">
-      <h2> Hotel Budir - Iceland <i class="fa fa-heart" aria-hidden="true"></i></h2>
-    </div>
-    <div class="col-6_sm-12">
-        <p class="padded-5"> The ceremony will be held with four of our closest friends as witness, in the black chapel at 2pm on the 10th of Noveber 2018. This will be exactly two years since our engagement. Hotel Budir, where the chapel is located, is on the west coast of Iceland. The area looks out to the ocean with a backdrop of beautiful green mountians and lush grass land. We chose this area for its uniqueness and in the hope of catching the northern lights for a truely magical day. </p>
-        <p> <a class="seePhotos padded-2" href="photos.html"> ~ See photos from the wedding ~</a> </p>
-
-    </div>
-
-    <div class="col-6_sm-12">
-      <img src="<a href="https://www.tripadvisor.com/LocationPhotoDirectLink-g1537454-d8627984-i289326215-Budir_Church-Budir_West_Region.html#289326215"><img alt="" src="https://media-cdn.tripadvisor.com/media/photo-s/11/3e/c4/74/budir-black-church.jpg""></a><br>This photo of Budir Church is courtesy of TripAdvisor</br>
-    </div>
-  </section>
-
-<!-- Section 9 Honeymoon blog preview -->
-<section id="Blog" class="bgColored margin-3">
-    <h2 class="padded-2"> Recent Journal Entries <i class="fa fa-pencil" aria-hidden="true"></i></h2>
-
-<div class="grid">
-
-    
-      <div class="postPreview col-4">
-    <a href="/blog.html" class="noDecoration">
-
-        <img src="Images/croped/laptopPhoto.jpg" />
-        <h3> ClaassensWedding.com </h3>
-        <p> Create the things you wish existed... </p>
-        <p> 04 March 2018 </p>
-        <p> Sara Kelly </p>
-      <a class="seePhotos padded-2" href="photos.html">~ See Photos ~</a>
-
-    </a>
-
-</div>
-
-    
-<p class=fancy> -Click any previw to view the full entry or go to the blog page to view all previous entries </p>
-</div>
-
-</section>
-
-  <!--Section 7 Happily Ever After Party-->
-<section id="AfterParty" class="grid">
-  <div class="col-12">
-    <h2> Happily Ever After Party <i class="fa fa-glass" aria-hidden="true"></i></h2>
-  </div>
-  <div class="col-6_sm-12 blackBorder">
-      <p class="padded-2 largertext">
-        To our nearest and dearest,  </p>
-        <p class="padded-2 largertext">
-        Sara and Carl request the pleasure of your company at their post wedding celebrations. Dinner and drinks will be held at their home in Sydney.  </p>
-        <p class="padded-2"> </p>
-
-      <p class="padded-2"> <span>Date:</span> Saturday 15th December 2018</p>
-      <p class="padded-2"> <span>Time:</span> 6pm to 11pm</p>
-      <p class="padded-2"> <span>Location:</span> 40 Mackay Circuit Ropes Crossing</p>
-      <p class="padded-2">
-      <span> Reccommended Accomodation:</span> Holiday Inn, Boronia Rd, North St Marys</p>
-      <p class="padded-2"> <span>Dress Code:</span> Smart-casual (think summer garden party) </p>
-    <p>   <a class="seePhotos padded-2" href="photos.html"> ~ See Photos ~ </a> </p>
-    </div>
-
-    <div class="col-6_sm-12 map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.4148597986728!2d150.7828656152064!3d-33.72408698069654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129b395430924f%3A0xf3443f773832967a!2s40+MacKay+Circuit%2C+Ropes+Crossing+NSW+2760!5e0!3m2!1sen!2sau!4v1519638682867" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-
-  </section>
 
 
 
 
     <!-- Section 8 Footer RSVP form -->
-    <section id="RSVP" class="grid-center bgColored padded-5">
+    <section id="RSVP" class="grid-center padded-5">
 
-      <h2 class="col-12 grid-center"> RSVP </h2>
-      <form class="grid-center col-11" method="POST" action="http://formspree.io/candela.electrical@gmail.com">
-<div class=rsvpStyle>
-        <div class="col-12">
-          <label for="name"> Your Name </label>
-          <input type="text" name="name" id="name" placeholder="" required="true"/>
-        </div>
+      <h1 class="col-12 grid-center"> RSVP </h1>
+      <form class="grid-center col-11" method="POST" action="http://formspree.io/lancejscarrott@gmail.com">
+<div class="form-style">
+<label for="Name">
+<span>Name of Guests</span><input type="text" name="Name" required="true" />
+</label>
+<label for="email">
+<span>Email Address</span><input type="email" name="Email" required="true" />
+</label>
+<label for="Phone">
+<span>Phone Number</span><input type="text" name="Phone Number" required="true" />
+</label>
 
-        <div class="col-12">
-          <lable for="email"> Your Email </lable>
-          <input type="email" name="email" placeholder="" required="true">
-        </div>
+<label for="Attendance">
+<span>Will you be Attending?</span>
+<input type="radio" name="Attendance" value="Attending" checked/> accepts with pleasure <br>
+<input type="radio" name="Attendance" value="notAttending"/> regretfully declines <br>
+</label>
 
-        <div class="col-12">
-          <label for="attending"> Will you be attending our Happily Ever After Party? </label>
-          <textarea name="attending" placeholder="" required="true"></textarea>
-        </div>
+<label for="Diet">
+<span>Dietary Requirements</span><textarea name="Dietary Requirements" onkeyup="adjust_textarea(this)" ></textarea>
+</label>
+<label>
+<input type="submit" value="Send Letter" />
+</label>
+</div>
 
-        <div class="col-12">
-          <lable for="message"> Message for the couple</lable>
-          <textarea name="message" placeholder=" please include any dietary requirements if attending"></textarea>
-        </div>
-</div> <!--closing div to have send button outside the RSVP note border-->
-
-        <div class="col-12 button">
-          <button type="submit">Send RSVP</button>
-        </div>
-
-      </form>
+</form>
 
       <a class="top-button" href="#home"> <i class="fa fa-angle-double-up" aria-hidden="true"> </i> </a>
 

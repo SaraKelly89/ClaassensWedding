@@ -54,8 +54,12 @@ section {
   margin-right: 5%;
 }
 
+.rounded{
+  border-radius: 6px;
+}
+
 .blackBorder{
-  border: dashed 1px black;
+  border: 1px black;
 }
 .largeText {
   font-size: 19px;}
@@ -65,17 +69,18 @@ section {
 }
 
 .bgColored {
-  background-color: #EFEEEE;
+  background-color: #FAFAFA;
 }
 
 h1 {
-font-family: 'Amatic SC', cursive;
-font-size: 2.6em;
+font-family: 'Black And White Picture', sans-serif;
+font-size: 2em;
 text-align: center;
+font-weight: lighter;
 }
 
 h2 {font-family: 'Josefin Slab', sans-serif;
-  font-size: 2.3em;
+  font-size: 1em;
   margin: 1%;
   text-align: center;
   padding: 1%;
@@ -85,29 +90,20 @@ h3 {font-family: 'Amatic SC', cursive;
     font-size: 2em;
     padding: 1%;}
 
-p {font-family: 'Noticia Text', serif;
-  font-size: 1.3em;
+p {font-family: 'Indie Flower', cursive;
+  font-size: 0.7em;
   font-weight: lighter;}
 
-.seePhotos {
-  text-decoration: none;
-  color:black;
-  margin: 2%;
-}
-
-.seePhotos:hover {
-  color: #888888;
-}
 
 /*-------------hearder section styles----------*/
 
 header a {
   color: black;
-  font-size: 1.5em;
+  font-size: 1em;
   text-decoration: none;
   transition: 2s;
   text-align: center;
-  padding: 0.5rem;
+  padding: 0.5em;
   display:inline-block;
 }
 
@@ -122,24 +118,6 @@ header a:hover {
 
 .NavRight {
   text-align: center;
-}
-svg{
-  position: absolute;
-  right: 0;
-  left: 0;
-  width: 100%;
-}
-
-.bottomTriangle {
-  bottom:0;
-}
-
-.bgTriangle {
-  fill: #EFEEEE;
-  opacity:1;
-}
-polygon{
-  opacity: .5;
 }
 
 /*-----Section 1 background image-----*/
@@ -161,26 +139,9 @@ polygon{
   margin-left: 5%;
   margin-right: 5%;}
 
-
-  /*------Section the plan-----*/
-  #thePlan h3{
-    font-size: 1.5em;
-  }
-
-  .thePlan {text-align: center;
-    background-color: white;
-    margin: 3%;
-    padding-left: : 3%;
-    padding-right: : 3%;
-    padding: 3%;
-    padding-bottom: 3%;}
-  .thePlan p{
-    padding-bottom: 2%;
-  }
-
 /*-----Section 2 polaroids-----*/
 .polaroid div {
-  background-color: white;
+  background-color: #FAFAFA;
 }
 
 .polaroid {
@@ -192,60 +153,136 @@ polygon{
    margin-right: 10%;
    margin-left: 10%;
    width: 80%;
-   background-color: white;
+   background-color: #FAFAFA;
    box-shadow: 0 4px 8px 0
    rgba(0, 0, 0, 0.2), 0 6px
    20px 0 rgba(0, 0, 0, 0.19);
 }
-.heart {text-align: center;}
 
-.heart i{font-size: 110px;}
-
-/*-----Section 3 Three Tile Buttons-----*/
-.tileGrey {
-  background-color: #BDC3C7;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-.tile {
-  text-decoration: none;
-  background-color: white;
-  border: 3px solid black;
-  margin-top: 1%;
-  margin-bottom: 1%;
-
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.tile a{text-decoration: none;
-color:black;
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
 }
 
-.tile a:hover{color: #888888;}
-
-tile i{
-  margin: 3%;
+/* Container around content */
+.container {
+    padding: 5px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
 }
 
-/*------Section 4 Our Story-----*/
-
-#ourStory h3{
-  font-size: 1.5em;
+/* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #2896BA;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
 }
 
-.story {text-align: center;
-  background-color: white;
-  margin: 3%;
-  padding-left: : 3%;
-  padding-right: : 3%;
-  padding: 3%;
-  padding-bottom: 3%;}
-.story p{
-  padding-bottom: 2%;
+/* Place the container to the left */
+.left {
+    left: 0;
 }
 
-.aboutStyle p{background-color: white;
+/* Place the container to the right */
+.right {
+    left: 50%;
 }
 
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 9px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 9px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+.content {
+    padding: 10px 20px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
 
 /*-----Section 5 Love Quote-----*/
 
@@ -259,105 +296,98 @@ tile i{
 
   .loveQuote i{padding:2%}
 
-
-
-/*-----Section 6 The Wedding-----*/
-#TheWedding p{
-  background-color: white;
-}
-
-/*-----Blog Posts-----*/
-.blogPosts {
-  margin:3%;}
-
-.noDecoration {
-  text-decoration: none;
-  color: black;
-}
-
-.noDecoration:hover{
-  color: #888888;}
-
-.fancy{;
-font-style: italic;}
-
-
-/*-----Section 7 Happily Ever After Party----*/
-#AfterParty p{
-  background-color: white;
-  }
-
-  #AfterParty h3{
-    font-family: 'Noticia Text', serif;
-    font-weight: normal;
-    background-color: white;}
-
-  #AfterParty span{
-  font-weight: bold;
-  font-size: 1em;}
-
-  #AfterParty map{
-    margin: 2%;}
-
 /*-----Section 8 Footer RSVP form-----*/
 
-.rsvpStyle {
-  font-family: 'Amatic SC', cursive;
-  font-weight: bold;
-  width: 100%;
-  font-size: 1.7em;
-  padding: 30px 30px 15px 30px;
-  border: 5px solid #53687E;
-  }
+.form-style{
+    width: 450px;
+    font-size: 16px;
+    background: #495C70;
+    padding: 30px 30px 15px 30px;
+    border: 5px solid #53687E;
+}
+.form-style input[type=submit],
+.form-style input[type=button],
+.form-style input[type=text],
+.form-style4 input[type=email],
+.form-style textarea,
+.form-style label
+{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+    color: #fff;
 
-.rsvpStyle input{
-  background: transparent;
-  border: none;
-  border-bottom: 1px dashed #555;
-  width: 100%;
-  font-style: italic;
+}
+.form-style label {
+    display:block;
+    margin-bottom: 10px;
+}
+.form-style label > span{
+    display: inline-block;
+    float: left;
+    width: 150px;
+}
+.form-style input[type=text],
+.form-style input[type=email]
+{
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed #83A4C5;
+    width: auto;
+    outline: none;
+    padding: 0px 0px 0px 0px;
+    font-style: italic;
+}
+.form-style textarea{
+    font-style: italic;
+    padding: 0px 0px 0px 0px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px dashed #83A4C5;
+    width: 275px;
+    overflow: hidden;
+    resize:none;
+    height:20px;
 }
 
-.rsvpStyle textarea{
-  background: transparent;
-  border: none;
-  border-bottom: 1px dashed #555;
-  width: 100%;
-  font-style: italic;
-  overflow: hidden;
-  resize: none;
+.form-style textarea:focus,
+.form-style input[type=text]:focus,
+.form-style input[type=email]:focus,
+{
+    border-bottom: 1px dashed #D9FFA9;
 }
 
-.button button{
-  font-family: 'Amatic SC', cursive;
-  font-size: 2em;
-  border: 1px dashed #555;
-  padding: 8px 10px 8px 10px;
-  border-radius: 5px;
-  margin-top: 3%;
-  background-color: #EFEEEE;
+.form-style input[type=submit],
+.form-style input[type=button]{
+    background: #576E86;
+    border: none;
+    padding: 8px 10px 8px 10px;
+    border-radius: 5px;
+    color: #dae6f0;
 }
-.button button:hover{
-  background-color:#FAFAFA ;
+.form-style input[type=submit]:hover,
+.form-style input[type=button]:hover{
+background: #FAFAFA;
+color: #495C70;
 }
 
 /*----- soft scroll to top floating button -----*/
 a.top-button {
   position: fixed;
   bottom: 20px;
-  right: 30px;
+  right: 20px;
   z-index: 45;
   border: none;
   outline: none;
-  color: white;
-  background-color: #888888;
+  color: black;
+  background-color: #FAFAFA;
   cursor: pointer;
-  padding: 15px;
+  padding: 10px;
   border-radius: 10px;
 }
 
 a.top-button:hover{
-  background-color: #555;
+  background-color: #2896BA;
 }
 
 
@@ -374,6 +404,7 @@ a.top-button:hover{
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
     z-index: 99999999;
 }
+/* the menu content */
 .burger-menu a {
   text-decoration: none;
   padding: 15px 11px;
@@ -397,13 +428,12 @@ a.top-button:hover{
   z-index: 9999999999;
   padding: 8px;
 }
+
+
 /*this is where you can chand the color of the buttons*/
-.mob-show{
-  display:none;
-}
 .burger-button span{
   width: 25px;
-  border: 2px solid #2896BA;
+  border: 1.5px solid black;
   background-color: black;
   display: block;
   border-radius: 22px;
@@ -432,9 +462,7 @@ a.top-button:hover{
   bottom:8px;
 }
 
-/* now press your button and see whats wrong? go back and add a top to the .burger-top on active to push it down and a bottom to the .burger-bottom to push it up */
-
-/* now try and make the middle line disapeare */
+/* make the middle line disapeare */
 
 .active .burger-middle{
   opacity:0;
@@ -442,9 +470,11 @@ a.top-button:hover{
 
 .burger-menu li{list-style:none}
 
-/*Media Quires*/
+/* media quires for text sizing here */
 @media all and (min-width: 960px){
-
+  .mob-show{
+    display:none;
+  }
   body{
     font-size: 20px;
   }
@@ -452,9 +482,6 @@ a.top-button:hover{
 
 @media all and (max-width: 959px) and (min-width:600px){
   .mob-show{
-    display:block;
-  }
-  .mob-hide{
     display:none;
   }
   body{
@@ -473,4 +500,3 @@ a.top-button:hover{
     }
 
   }
-  /* add media quires for text sizing here */
