@@ -8,8 +8,8 @@
 
   <link rel="stylesheet" href="/styles/owl.carousel.min.css">
 <link rel="stylesheet" href="/styles/owl.theme.default.css">
-  <link href="https://fonts.googleapis.com/css?family=Black+And+White+Picture|Indie+Flower" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.4.0/gridlex.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Black+And+White+Picture|Indie+Flower|Gloria+Hallelujah" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
   <link rel="stylesheet" href="/styles/style.css">
   <script src="https://use.fontawesome.com/d185550c4b.js"> </script>
 
@@ -60,9 +60,9 @@ function adjust_textarea(h) {
       var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 
-      // Output the result in an element with id="demo"
-      document.getElementById("timer").innerHTML = days + "days " + hours + "hours "
-      + minutes + "minutes " + "till we say \"I do\"";
+      // Output the result in an element with id="timer"
+      document.getElementById("timer").innerHTML = days + " days " + hours + " hours "
+      + minutes + " minutes " + "\n" + " till we say \"I do\"";
 
       // If the count down is over, write some text
       if (distance < 0) {
@@ -75,19 +75,26 @@ function adjust_textarea(h) {
 
   <!--Header Navigation-->
   <header id="home">
-    <div class="mob-hide">
-    <nav class="grid-middle mob-hide">
-      <div class="col-7 margin-3">
-        <a href="index.html"><h1>  Lance & lea's Beach Wedding </h1></a>
+    <div>
+    <nav class="grid-middle">
+      <div class="col-7 margin-3 mob-hide">
+        <a href="index.html"><h1>  Lance & Lea's Wedding by the Sea </h1></a>
       </div>
-      <div class="NavRight col-4">
+      <div class="col-6 margin-1 mob-show smallHeading">
+        <a href="index.html"><h1>  Lance & Lea's <br> Wedding by the Sea </h1></a>
+      </div>
+      <!-- gallery and RSVP Hidden till jan--
+      <div class="NavRight col-5 ">
         <a href="photos.html"> Gallery </a>
           <a href="index.html#RSVP"> RSVP </a>
+      </div>   -->
+      <div class="NavRight col-5 smallHeading ">
+        <h1> -Save the Date- </h1>
       </div>
     </nav>
   </div>
 
-      <!-- Hamburger Menu -->
+      <!-- Hamburger Menu -- hidden till after Invites sent out
       <div class="mob-show">
         <div class="burger-button">
             <span class="burger-top"></span>
@@ -103,7 +110,7 @@ function adjust_textarea(h) {
             </ul>
           </nav>
         </div>
-    </div>
+    </div>      -->
 
 <section>
 <div>
@@ -125,6 +132,7 @@ function adjust_textarea(h) {
 
 
     <!-- Section 8 Footer RSVP form -->
+    <!-- Hide RSVP toll Jan --
     <section id="RSVP" class="grid-center padded-5">
 
       <h1 class="col-12 grid-center"> RSVP </h1>
@@ -142,6 +150,9 @@ function adjust_textarea(h) {
 
 <label for="Attendance">
 <span>Will you be Attending?</span>
+<div class="mob-show">
+  <br> <br> <br>
+</div>
 <input type="radio" name="Attendance" value="Attending" checked/> accepts with pleasure <br>
 <input type="radio" name="Attendance" value="notAttending"/> regretfully declines <br>
 </label>
@@ -150,11 +161,11 @@ function adjust_textarea(h) {
 <span>Dietary Requirements</span><textarea name="Dietary Requirements" onkeyup="adjust_textarea(this)" ></textarea>
 </label>
 <label>
-<input type="submit" value="Send Letter" />
+<input type="submit" value="Send RSVP" />
 </label>
 </div>
 
-</form>
+</form>    -->
 
       <a class="top-button" href="#home"> <i class="fa fa-angle-double-up" aria-hidden="true"> </i> </a>
 

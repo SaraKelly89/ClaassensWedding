@@ -12,10 +12,6 @@ img {
   display: block;
 }
 
-h1,h2, h3, h4, h5, h6, p, a {
-  /*border: 1px solid rgb(220,220,220);*/
-}
-
 /*universial styles*/
 header, footer, section{
   overflow: hidden;
@@ -44,6 +40,11 @@ section {
   padding-bottom: 5%;
 }
 
+.margin-1{
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
 .margin-3{
   margin-left: 3%;
   margin-right: 3%;
@@ -52,6 +53,11 @@ section {
 .margin-5{
   margin-left: 5%;
   margin-right: 5%;
+}
+
+.margin-5{
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .rounded{
@@ -64,10 +70,6 @@ section {
 .largeText {
   font-size: 19px;}
 
-.largertext{
-  font-size: 1.5em;
-}
-
 .bgColored {
   background-color: #FAFAFA;
 }
@@ -77,6 +79,13 @@ font-family: 'Black And White Picture', sans-serif;
 font-size: 2em;
 text-align: center;
 font-weight: lighter;
+}
+
+.smallHeading h1{
+  font-family: 'Black And White Picture', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  font-weight: lighter;
 }
 
 h2 {font-family: 'Josefin Slab', sans-serif;
@@ -90,8 +99,22 @@ h3 {font-family: 'Amatic SC', cursive;
     font-size: 2em;
     padding: 1%;}
 
+h4 {font-family: 'Gloria Hallelujah', cursive;
+  font-size: 1em;
+  text-align: center;
+}
+.smallHeading h4{
+  font-family: 'Gloria Hallelujah', cursive;
+    font-size: 12px;
+    text-align: center;
+}
+
+h5 {font-family: 'Indie Flower', cursive;
+  font-size: 14px;
+  }
+
 p {font-family: 'Indie Flower', cursive;
-  font-size: 0.7em;
+  font-size: 13.5px;
   font-weight: lighter;}
 
 
@@ -99,7 +122,7 @@ p {font-family: 'Indie Flower', cursive;
 
 header a {
   color: black;
-  font-size: 1em;
+  font-size: 0.9em;
   text-decoration: none;
   transition: 2s;
   text-align: center;
@@ -159,11 +182,40 @@ header a:hover {
    20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.polaroid h1{
+  font-size: 20px;
+}
+
+/*-- paper look-- */
+/* gradient */
+#instructions {font: 16px 'AmericanTypewriter', Cambria, Georgia; color: #282625; margin: 0 auto; width: 600px;}
+.paper {
+    padding: 22px 15px 15px 45px;
+    position: relative;
+    border: 1px solid #B5B5B5;
+    background: white;
+    background: -webkit-linear-gradient(top, #DFE8EC 0%, white 8%) 0 57px;
+    background: -moz-linear-gradient(top, #DFE8EC 0%, white 8%) 0 57px;
+    background: linear-gradient(top, #DFE8EC 0%, white 8%) 0 57px;
+    -webkit-background-size: 100% 20px;
+    -moz-background-size: 100% 20px;
+    -ms-background-size: 100% 20px;
+    background-size: 100% 20px;
+}
+
+/* the red line */
+.paper::before {content:""; z-index:-1; margin:0 1px; width:706px; height:10px; position:absolute; bottom:-3px; left:0; background:white; border:1px solid #B5B5B5;}
+.paper::after {content:''; position:absolute; width:0px; top:0; left:39px; bottom:0; border-left:1px solid #F8D3D3;}
+
 /* The actual timeline (the vertical ruler) */
 .timeline {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.timeline h2{
+  text-align: left;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -180,10 +232,10 @@ header a:hover {
 
 /* Container around content */
 .container {
-    padding: 5px 40px;
-    position: relative;
+    padding: 5px 20px;
+    position:relative;
     background-color: inherit;
-    width: 50%;
+    max-width: 50%;
 }
 
 /* The circles on the timeline */
@@ -260,10 +312,13 @@ header a:hover {
 
   /* Full-width containers */
   .container {
-    width: 100%;
+    max-width: 100%;
+    position:relative;
     padding-left: 50px;
     padding-right: 25px;
   }
+
+
 
   /* Make sure that all arrows are pointing leftwards */
   .container::before {
@@ -275,7 +330,7 @@ header a:hover {
 
   /* Make sure all circles are at the same spot */
   .left::after, .right::after {
-    left: 15px;
+    left: 7px;
   }
 
   /* Make all right containers behave like the left ones */
@@ -284,17 +339,9 @@ header a:hover {
   }
 }
 
-/*-----Section 5 Love Quote-----*/
 
-.loveQuote {padding: 2%;}
+/*----- Wedding Map -----*/
 
-  .loveQuote h2{
-    font-family: Amatic+SC;
-    font-size: 30px;
-    text-align: center;
-  }
-
-  .loveQuote i{padding:2%}
 
 /*-----Section 8 Footer RSVP form-----*/
 
@@ -308,7 +355,7 @@ header a:hover {
 .form-style input[type=submit],
 .form-style input[type=button],
 .form-style input[type=text],
-.form-style4 input[type=email],
+.form-style input[type=email],
 .form-style textarea,
 .form-style label
 {
@@ -344,7 +391,7 @@ header a:hover {
     outline: none;
     border: none;
     border-bottom: 1px dashed #83A4C5;
-    width: 275px;
+    width: auto;
     overflow: hidden;
     resize:none;
     height:20px;
@@ -419,6 +466,7 @@ a.top-button:hover{
 }
 .burger-menu li{
   list-style:none;
+  overflow: hidden;
 }
 /* this is where you style the button if you want to add more space between the spans than add padding to this div but make sure you also add it to the top and bottom active classes on there top/bottom or else your cross wont line up*/
 .burger-button {
@@ -468,8 +516,6 @@ a.top-button:hover{
   opacity:0;
 }
 
-.burger-menu li{list-style:none}
-
 /* media quires for text sizing here */
 @media all and (min-width: 960px){
   .mob-show{
@@ -496,7 +542,13 @@ a.top-button:hover{
       display:none;
     }
     body{
-      font-size: 10px;
+      font-size: 16px;
     }
 
+    h1 {
+    font-family: 'Black And White Picture', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: lighter;
+    }
   }
